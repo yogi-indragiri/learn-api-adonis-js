@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "41c3fed1-899b-4a88-ab02-75a1570d36bb",
+		"name": "Learn Adonis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3333/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"sessionValue": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"sessionValue": "test",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"sessionValue": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3333/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"register"
+					]
+				},
+				"description": "Register"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3333/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"sessionValue": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"sessionValue": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3333/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3333/posts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU0NTIzMzM0OH0.reVsRXy1OUskXixMsVPWLSIL8zoK7W35jax3aTDFNkw"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "ini test title",
+							"sessionValue": "ini test title",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "ini test run description",
+							"sessionValue": "ini test run description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3333/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"posts"
+					]
+				},
+				"description": "Post posts"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3333/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"posts"
+					]
+				},
+				"description": "Get all post"
+			},
+			"response": []
+		}
+	]
+}
