@@ -30,5 +30,8 @@ Run the following command to run startup migrations.
 adonis migration:run
 ```
 
+### Download Collection to test api
+[Download Collection](https://github.com/yogi-indragiri/learn-api-adonis-js/blob/master/Learn%20Adonis.postman_collection.json)
+
 ### Tutorial by Pusher
 [HOW TO BUILD AN API WITH AUTHENTICATION IN ADONIS](https://pusher.com/tutorials/api-authentication-adonis "HOW TO BUILD AN API WITH AUTHENTICATION IN ADONIS")
